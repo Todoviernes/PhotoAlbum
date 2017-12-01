@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+<%= link_to '<- Back', pictures_path %>
+<h2 class="text-center m-3">
+  <%= @picture.title %>
+</h2>
+
+<div class="text-center">
+	
+  <%= image_tag @picture.url %>
+  
+</div>
+
+<%= link_to 'Edit', edit_picture_path(@picture) %>
+
